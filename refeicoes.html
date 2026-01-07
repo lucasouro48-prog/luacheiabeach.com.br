@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Refeições | Lua Cheia</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="topo">
+    <h1>🌙 Lua Cheia</h1>
+
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+  </div>
+
+  <nav id="menu">
+    <a href="index.html">Início</a>
+    <a href="petiscos.html">Petiscos</a>
+    <a href="caldos.html">Caldos</a>
+    <a href="saladas.html">Saladas</a>
+    <a href="bebidas.html">Bebidas</a>
+    <a href="porcoes.html">Porções</a>
+    <a href="carrinho.html">🛒 Carrinho</a>
+  </nav>
+</header>
+
+
+<main>
+
+<h2>🐟 Refeições com Peixes</h2>
+<div class="card"><span>Peixe Inteiro</span><button onclick="adicionar('Peixe Inteiro',170.90)">Adicionar</button></div>
+<div class="card"><span>Peixe em Posta</span><button onclick="adicionar('Peixe em Posta',160)">Adicionar</button></div>
+<div class="card"><span>Peixe em Posta c/ Molho de Camarão</span><button onclick="adicionar('Peixe Posta Molho Camarão',165)">Adicionar</button></div>
+<div class="card"><span>Peixe à Milanesa</span><button onclick="adicionar('Peixe à Milanesa',160)">Adicionar</button></div>
+<div class="card"><span>Isca de Peixe</span><button onclick="adicionar('Isca de Peixe',154)">Adicionar</button></div>
+<div class="card"><span>Mix do Mar</span><button onclick="adicionar('Mix do Mar',165)">Adicionar</button></div>
+<div class="card"><span>Peixe Lua Cheia</span><button onclick="adicionar('Peixe Lua Cheia',180)">Adicionar</button></div>
+
+<h2>🍲 Moquecas</h2>
+<div class="card"><span>Moqueca de Peixe</span><button onclick="adicionar('Moqueca de Peixe',155)">Adicionar</button></div>
+<div class="card"><span>Moqueca de Camarão</span><button onclick="adicionar('Moqueca de Camarão',169)">Adicionar</button></div>
+<div class="card"><span>Moqueca Mista</span><button onclick="adicionar('Moqueca Mista',175)">Adicionar</button></div>
+<div class="card"><span>Moqueca Meia</span><button onclick="adicionar('Moqueca Meia',155)">Adicionar</button></div>
+<div class="card"><span>Moqueca de Lagosta</span><button onclick="adicionar('Moqueca de Lagosta',325)">Adicionar</button></div>
+
+<h2>🍗 Carnes</h2>
+<div class="card"><span>Carne de Sol</span><button onclick="adicionar('Carne de Sol',125)">Adicionar</button></div>
+<div class="card"><span>Picanha Argentina</span><button onclick="adicionar('Picanha Argentina',215)">Adicionar</button></div>
+<div class="card"><span>Bife Acebolado</span><button onclick="adicionar('Bife Acebolado',115)">Adicionar</button></div>
+<div class="card"><span>Filé com Fritas</span><button onclick="adicionar('Filé com Fritas',115)">Adicionar</button></div>
+<div class="card"><span>Filé à Parmegiana</span><button onclick="adicionar('Filé à Parmegiana',150)">Adicionar</button></div>
+<div class="card"><span>Filé Mignon</span><button onclick="adicionar('Filé Mignon',150)">Adicionar</button></div>
+<div class="card"><span>Filé ao Molho Madeira</span><button onclick="adicionar('Filé Molho Madeira',152)">Adicionar</button></div>
+<div class="card"><span>Espaguete à Bolonhesa</span><button onclick="adicionar('Espaguete Bolonhesa',132)">Adicionar</button></div>
+
+<h2>🍤 Camarões</h2>
+<div class="card"><span>Camarão Alho e Óleo</span><button onclick="adicionar('Camarão Alho e Óleo',154)">Adicionar</button></div>
+<div class="card"><span>Camarão à Milanesa</span><button onclick="adicionar('Camarão à Milanesa',160)">Adicionar</button></div>
+<div class="card"><span>Camarão ao Curry</span><button onclick="adicionar('Camarão ao Curry',158)">Adicionar</button></div>
+<div class="card"><span>Camarão à Grega</span><button onclick="adicionar('Camarão à Grega',165)">Adicionar</button></div>
+<div class="card"><span>Camarão Acebolado</span><button onclick="adicionar('Camarão Acebolado',143)">Adicionar</button></div>
+<div class="card"><span>Camarão no Abacaxi</span><button onclick="adicionar('Camarão no Abacaxi',187)">Adicionar</button></div>
+<div class="card"><span>Espaguete de Camarão</span><button onclick="adicionar('Espaguete de Camarão',150)">Adicionar</button></div>
+
+<h2>👶 Infantil</h2>
+<div class="card"><span>Prato Infantil</span><button onclick="adicionar('Prato Infantil',48.40)">Adicionar</button></div>
+
+</main>
+</body>
+</html>

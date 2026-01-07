@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Carrinho | Lua Cheia</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+
+<style>
+input, textarea{
+  width:100%;
+  padding:10px;
+  margin:10px 0;
+  border-radius:6px;
+  border:1px solid #ccc;
+}
+.btn-limpar{
+  background:#999;
+  color:#fff;
+  padding:10px;
+  border:none;
+  border-radius:6px;
+  width:100%;
+  margin-top:10px;
+}
+.card button{
+  margin-left:5px;
+  padding:5px 8px;
+}
+</style>
+</head>
+
+<body onload="carregarCarrinho()">
+
+<header>
+  <div class="topo">
+    <h1>🌙 Lua Cheia</h1>
+
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+  </div>
+
+  <nav id="menu">
+    <a href="index.html">Início</a>
+    <a href="refeicoes.html">Refeições</a>
+    <a href="petiscos.html">Petiscos</a>
+    <a href="caldos.html">Caldos</a>
+    <a href="saladas.html">Saladas</a>
+    <a href="bebidas.html">Bebidas</a>
+    <a href="porcoes.html">Porções</a>
+   
+    
+  </nav>
+</header>
+
+
+
+<main>
+
+<p><h2>📋 Itens selecionados</h2></p>
+<div id="lista"></div>
+
+<p id="total" class="total"></p>
+
+<button class="btn-limpar" onclick="limparCarrinho()">
+🗑️ Limpar Carrinho
+</button>
+
+<h2>👤 Identificação</h2>
+<input type="text" id="cliente" placeholder="Nome do cliente ou mesa">
+
+<h2>🧭 Guia / Indicação</h2>
+<input type="text" id="guia" placeholder="Nome do guia">
+
+<h2>📝 Observações</h2>
+<textarea id="obs" rows="4" placeholder="Ex: sem cebola, pouco sal..."></textarea>
+
+<button class="btn-finalizar" onclick="finalizarPedido()">
+📲 Finalizar Pedido no WhatsApp
+</button>
+
+</main>
+
+</body>
+</html>

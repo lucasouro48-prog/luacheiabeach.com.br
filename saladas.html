@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Saladas</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="topo">
+    <h1>🌙 Lua Cheia</h1>
+
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+  </div>
+
+  <nav id="menu">
+    <a href="index.html">Início</a>
+    <a href="refeicoes.html">Refeições</a>
+    <a href="petiscos.html">Petiscos</a>
+    <a href="caldos.html">Caldos</a>
+    <a href="bebidas.html">Bebidas</a>
+    <a href="porcoes.html">Porções</a>
+    <a href="carrinho.html">🛒 Carrinho</a>
+  </nav>
+</header>
+
+
+<main>
+<div class="card"><span>Salada de Camarão</span><button onclick="adicionar('Salada de Camarão',55)">Adicionar</button></div>
+<div class="card"><span>Salada Simples</span><button onclick="adicionar('Salada Simples',40)">Adicionar</button></div>
+<div class="card"><span>Salada Tropical</span><button onclick="adicionar('Salada Tropical',60)">Adicionar</button></div>
+<div class="card"><span>Salada Vegetariana</span><button onclick="adicionar('Salada Vegetariana',50)">Adicionar</button></div>
+</main>
+</body>
+</html>

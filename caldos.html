@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Caldos</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="topo">
+    <h1>🌙 Lua Cheia</h1>
+
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+  </div>
+
+  <nav id="menu">
+    <a href="index.html">Início</a>
+    <a href="refeicoes.html">Refeições</a>
+    <a href="petiscos.html">Petiscos</a>
+    <a href="saladas.html">Saladas</a>
+    <a href="bebidas.html">Bebidas</a>
+    <a href="porcoes.html">Porções</a>
+    <a href="carrinho.html">🛒 Carrinho</a>
+  </nav>
+</header>
+
+
+
+<main>
+<div class="card"><span>Sururu</span><button onclick="adicionar('Caldo de Sururu',18)">Adicionar</button></div>
+<div class="card"><span>Camarão</span><button onclick="adicionar('Caldo de Camarão',18)">Adicionar</button></div>
+<div class="card"><span>Ostras</span><button onclick="adicionar('Caldo de Ostras',18)">Adicionar</button></div>
+<div class="card"><span>Polvo</span><button onclick="adicionar('Caldo de Polvo',18)">Adicionar</button></div>
+<div class="card"><span>Misto</span><button onclick="adicionar('Caldo Misto',25)">Adicionar</button></div>
+<div class="card"><span>Peixe</span><button onclick="adicionar('Caldo de Peixe',18)">Adicionar</button></div>
+</main>
+</body>
+</html>
