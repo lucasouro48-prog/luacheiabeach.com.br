@@ -2,6 +2,14 @@
   --azul:#0b1c2d;
   --amarelo:#f2c94c;
   --branco:#ffffff;
+
+  /* Novos tamanhos de fonte */
+  --font-base:18px;
+  --font-header:28px;
+  --font-nav:20px;
+  --font-card:18px;
+  --font-button:18px;
+  --font-total:22px;
 }
 
 *{
@@ -14,6 +22,7 @@
 body{
   background:#f5f5f5;
   color:#222;
+  font-size:var(--font-base);
 }
 
 header{
@@ -24,14 +33,17 @@ header{
   color:var(--branco);
   padding:15px;
   z-index:1000;
+  font-size:var(--font-header);
 }
 
 header h1{
   color:var(--amarelo);
+  font-size:var(--font-header);
 }
 
 nav{
   margin-top:10px;
+  font-size:var(--font-nav);
 }
 
 nav a{
@@ -39,10 +51,12 @@ nav a{
   text-decoration:none;
   margin-right:15px;
   font-weight:bold;
+  font-size:var(--font-nav);
 }
 
 main{
   padding:120px 20px 20px;
+  font-size:var(--font-base);
 }
 
 .section{
@@ -58,19 +72,21 @@ main{
   display:flex;
   justify-content:space-between;
   align-items:center;
+  font-size:var(--font-card);
 }
 
 .card button{
   background:var(--amarelo);
   border:none;
-  padding:8px 12px;
+  padding:10px 16px; /* aumentei um pouco o padding para acompanhar a fonte */
   border-radius:5px;
   cursor:pointer;
   font-weight:bold;
+  font-size:var(--font-button);
 }
 
 .total{
-  font-size:18px;
+  font-size:var(--font-total);
   font-weight:bold;
   margin-top:20px;
 }
@@ -78,11 +94,11 @@ main{
 .btn-finalizar{
   background:green;
   color:#fff;
-  padding:15px;
+  padding:18px;
   width:100%;
   border:none;
   border-radius:8px;
-  font-size:18px;
+  font-size:var(--font-button);
   cursor:pointer;
 }
 
@@ -94,7 +110,7 @@ main{
 
 .menu-btn{
   display:none;
-  font-size:28px;
+  font-size:32px; /* aumentei um pouco */
   cursor:pointer;
 }
 
@@ -106,10 +122,11 @@ main{
     background:var(--azul);
     margin-top:10px;
     padding:10px;
+    font-size:var(--font-nav);
   }
 
   nav a{
-    padding:10px 0;
+    padding:12px 0; /* aumenta o espaço */
     border-bottom:1px solid rgba(255,255,255,.2);
   }
 
